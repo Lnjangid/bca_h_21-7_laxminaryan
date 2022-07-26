@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h3>Internal buttons</h3>
+    <hr/>
+		<input style="color:rgb(38, 132, 240);" type="button" value="Alert Internal" onclick="forAlert()" />&nbsp;&nbsp;
+		<input  style="color:rgb(201, 77, 5);" type="button" value="Confirm Internal" onclick="forConfirm()" />&nbsp;&nbsp;
+		<input style="color:rgb(86, 199, 42);" type="button" value="Prompt Internal" onclick="forPrompt()" />&nbsp;&nbsp;
+		<hr/>
+</body>
+<script type="text/javascript">
+    function forAlert(){
+            alert("hello.....");
+        }
+        
+        function forConfirm(){
+            if(confirm("Are you want to exit?")){
+                alert("yes");
+            }
+            else{
+                alert("no");
+            }
+        }
+        function forPrompt(){
+            var fName=prompt("Enter captcha");
+            
+        }
+</script>
+</html>
